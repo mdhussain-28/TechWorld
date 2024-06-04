@@ -1,0 +1,380 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Tech World</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="script.js">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light" style="background-color: rgb(83, 222, 175);">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="images/logo.jpg" width="40px" alt="Tech World">
+            </a>
+
+
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">News</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Reviews</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Categories
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Software</a></li>
+                            <li><a class="dropdown-item" href="#">Gadets</a></li>
+                            <li><a class="dropdown-item" href="#">Gaming</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Daily RoundUp</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact Us</a>
+                    </li>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2 " type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" style="background-color: rgb(0, 192, 0);"
+                        type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Alert
+    <div id="liveAlertPlaceholder"></div>
+    <button type="button" class="btn btn-primary" id="liveAlertBtn">Show live alert</button>
+    <button type="button" class="btn btn-primary btn-block submit-btn" onclick="submitForm()">Submit</button> -->
+
+    <!-- Slider -->
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel ">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"
+                aria-label="Slide 4"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="images/slider1.jpg" width="100px" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Your Computer</h5>
+                    <p>A gateway to internet</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="images/slider2.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Working Laptop</h5>
+                    <p>Join in group</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="images/slider3.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Phone the next gen</h5>
+                    <p>One touch to open internet</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="images/slider4.jpg" width="500px" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Motivation</h5>
+                    <p>To make the world proud</p>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <!-- Tagline and Content -->
+    <div class="container-fluid ">
+        <div class="row justify-content-evenly">
+            <div class="col-12">
+                <h1 class="display-5 text-center mt-5 mb-5">Welcome to Tech World – <br> Your Ultimate Destination for
+                    the Latest in Technology News, Reviews, and Insights!</h1>
+            </div>
+            <div class="col-md-3 text-center">
+                <h1><i class="bi bi-laptop"></i></h1>
+                <h2>Innovative Gadgets</h2>
+                <h4>Discover the latest smart devices and gadgets transforming daily life, enhancing convenience, and
+                    bringing futuristic features to your fingertips.</h4>
+            </div>
+            <div class="col-md-3 text-center">
+                <h1><i class="bi bi-diagram-3-fill"></i></h1>
+                <h2>Breakthrough Technologies</h2>
+                <h4>Stay updated with advancements in AI, blockchain, and quantum computing, revolutionizing industries
+                    and everyday experiences.
+
+                </h4>
+            </div>
+            <div class="col-md-3 text-center ">
+                <h1><i class="bi bi-gpu-card"></i></h1>
+                <h2>Expert Reviews</h2>
+                <h4>Get detailed and insightful reviews of the newest tech products, helping you make informed and
+                    confident purchasing decisions.</h4>
+            </div>
+        </div>
+    </div>
+
+    <!-- Line -->
+    <br>
+    <hr>
+    <br>
+
+    <!-- Content -->
+    <div class="container-fluid" style>
+        <div class="row justify-content-evenly">
+            <div class=" col-sm-4">
+                <div class="card">
+                    <img src="images/img1.jpg" class="card-img-top img-fluid fixed-size" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Quantum Computing</h5>
+                        <p class="card-text">Quantum computers are solving complex problems faster than ever,
+                            revolutionizing fields like cryptography and material science.</p>
+                        <a href="#" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="card">
+                    <img src="images/img3.jpg" class="card-img-top img-fluid fixed-size" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">AI Advancements</h5>
+                        <p class="card-text">AI is now generating human-like text and images, enhancing creative
+                            industries and streamlining customer service.</p>
+                        <a href="#" class="btn btn-primary">Discover AI</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="card">
+                    <img src="images/img2.jpg" class="card-img-top img-fluid fixed-size" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">5G Networks</h5>
+                        <p class="card-text">5G technology is providing ultra-fast internet speeds, enabling advanced
+                            IoT applications and smarter cities.</p>
+                        <a href="#" class="btn btn-primary">Explore 5G</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Line -->
+    <br>
+    <hr>
+    <br>
+
+    <!-- Contact us and address -->
+
+    <div class="container-fluid">
+        <div class="row justify-content-evenly">
+            <div class="col-md-6">
+
+                <div class="container mt-5">
+                    <h1 class="text-center mb-4">Contact Us</h1>
+                    <form>
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="name" placeholder="Your Name">
+                        </div>
+                        <div class="form-group">
+                            <input type="email" class="form-control" id="email" placeholder="Your Email">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="subject" placeholder="Subject">
+                        </div>
+                        <div class="form-group">
+                            <textarea class="form-control" id="message" rows="4" placeholder="Your Message"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-block submit-btn"
+                            id="liveAlertBtn">Submit</button>
+                    </form>
+                </div>
+
+            </div>
+
+            <div class="col-md-6">
+                <div class="container mt-5">
+                    <h1 class="text-center mb-0">Our Address</h1>
+                    <p class="text-center fst-italic h-6">68 Ripon Street Kolkata-70016</p>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3684.6823808854597!2d88.3553319!3d22.553567799999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a0277051f017df3%3A0xe5a4a10e896ed337!2s68%2C%20Ripon%20St%2C%20Esplanade%2C%20Taltala%2C%20Kolkata%2C%20West%20Bengal%20700016!5e0!3m2!1sen!2sin!4v1717529660911!5m2!1sen!2sin"
+                        style="width: 100% ;" height="358" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <br>
+    <hr>
+    <br>
+
+    <!-- FAQ Section -->
+
+    <div class="row justify-content-evenly">
+        <div class="accordion col-10  " id="accordionPanelsStayOpenExample">
+
+            <h2 class="h2 text-center">FAQ</h2>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
+                        aria-controls="panelsStayOpen-collapseOne">
+                        Q: What is Tech World?
+                    </button>
+                </h2>
+                <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
+                    <div class="accordion-body">
+                        A: Tech World is your ultimate destination for the latest technology news, reviews, and
+                        insights.
+                        Our platform covers a wide range of topics, from emerging tech trends to in-depth analyses of
+                        groundbreaking innovations, all curated to keep you informed and engaged in the ever-evolving
+                        world
+                        of technology.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false"
+                        aria-controls="panelsStayOpen-collapseTwo">
+                        Q: Is all content on Tech World free?
+                    </button>
+                </h2>
+                <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
+                    <div class="accordion-body">
+                        A: Yes, Tech World is committed to providing free access to all of our content. We believe in
+                        democratizing information and ensuring that everyone has the opportunity to stay informed about
+                        the
+                        latest developments in technology, without any paywalls or restrictions.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false"
+                        aria-controls="panelsStayOpen-collapseThree">
+                        Q: How do I report a technical issue on Tech World?
+                    </button>
+                </h2>
+                <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
+                    <div class="accordion-body">
+                        A: If you encounter any technical issues while using Tech World, we encourage you to reach out
+                        to
+                        our dedicated technical support team. You can contact us through the contact form on our website
+                        or
+                        by emailing support@techworld.com. Our team will promptly address any issues and provide
+                        assistance
+                        to ensure a seamless browsing experience for our users.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false"
+                        aria-controls="panelsStayOpen-collapseThree">
+                        Q: Can I suggest a topic for an article on Tech World?
+                    </button>
+                </h2>
+                <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
+                    <div class="accordion-body">
+                        A: Absolutely! At Tech World, we value input from our audience and welcome suggestions for
+                        topics
+                        you'd like to see covered on our platform. Whether it's a specific technology trend, an emerging
+                        innovation, or a pressing tech-related issue, we're here to listen. You can submit your
+                        suggestions
+                        through our contact form or by emailing us at suggestions@techworld.com. Your feedback helps us
+                        tailor our content to better meet the interests and needs of our community.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+     
+    <!-- Footer -->
+    <footer class="bg-dark text-white mt-5">
+        <div class="container py-4">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <h5>About Us</h5>
+                    <p>Tech World is your ultimate destination for the latest technology news, reviews, and insights. Stay informed about the cutting-edge advancements in the world of technology.</p>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <h5>Contact Us</h5>
+                    <p>Have questions or suggestions? Feel free to reach out to us!</p>
+                    <ul class="list-unstyled">
+                        <li>Email: info@techworld.com</li>
+                        <li>Phone: +123-456-7890</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid bg-dark">
+            <div class="row">
+                <div class="col text-center">
+                    <p class="text-white">&copy; 2024 Tech World. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,0 +1,39 @@
+.nav-item {
+    color:black;
+    font-weight: 600;
+  }
+  .w-100 {
+    width: 100%; /* Ensures the image covers the card width */
+    height: 800px; /* Sets a fixed height for the image */
+    object-fit: cover; /* Ensures the image covers the area without distortion */
+  }
+  .carousel-item {
+    transition: transform .8s ease-in-out; /* Adjust duration and easing as needed */
+    
+  }
+  .fixed-size {
+    width: 100%; /* Ensures the image covers the card width */
+    height: 200px; /* Sets a fixed height for the image */
+    object-fit: cover; /* Ensures the image covers the area without distortion */
+}
+
+
+
+.form-group {
+  margin-bottom: 2rem;
+}
+.form-control {
+  border-radius: 0;
+  background-color: #f8f9fa;
+}
+.form-control:focus {
+  background-color: #e9ecef;
+}
+.submit-btn {
+  border-radius: 0;
+  transition: all 0.3s ease;
+}
+.submit-btn:hover {
+  background-color: #0b5038;
+  border-color: #007bff;
+}
